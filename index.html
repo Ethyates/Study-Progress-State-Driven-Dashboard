@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Progress Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+
+    <header class="dashboard-header">
+      <div>
+        <h1>Study Progress Dashboard</h1>
+        <p>Track study tasks, notes, progress, and recent activity.</p>
+      </div>
+
+      <button id="themeToggleBtn" class="secondary-btn">Toggle Theme</button>
+    </header>
+
+    <main>
+      <section class="stats-section">
+        <div class="stat-card">
+          <h2 id="totalTasks">0</h2>
+          <p>Total Tasks</p>
+        </div>
+
+        <div class="stat-card">
+          <h2 id="completedTasks">0</h2>
+          <p>Completed</p>
+        </div>
+
+        <div class="stat-card">
+          <h2 id="pendingTasks">0</h2>
+          <p>Pending</p>
+        </div>
+
+        <div class="stat-card">
+          <h2 id="completionPercent">0%</h2>
+          <p>Progress</p>
+        </div>
+      </section>
+
+      <section class="progress-section card">
+        <h2>Overall Progress</h2>
+        <div class="progress-bar">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Add Study Task</h2>
+
+        <form id="taskForm" class="form-grid">
+          <input 
+            type="text" 
+            id="taskInput" 
+            placeholder="Enter a study task"
+          />
+
+          <select id="categoryInput">
+            <option value="">Choose category</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <select id="priorityInput">
+            <option value="">Choose priority</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+
+          <button type="submit" class="primary-btn">Add Task</button>
+        </form>
+
+        <p id="taskMessage" class="message"></p>
+      </section>
+
+      <section class="card">
+        <div class="section-header">
+          <h2>Study Tasks</h2>
+
+          <select id="filterInput">
+            <option value="all">All Categories</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Study Notes</h2>
+
+        <form id="noteForm" class="note-form">
+          <textarea 
+            id="noteInput" 
+            placeholder="Write a quick study note"
+          ></textarea>
+
+          <button type="submit" class="primary-btn">Add Note</button>
+        </form>
+
+        <p id="noteMessage" class="message"></p>
+
+        <ul id="noteList" class="note-list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Recent Activity</h2>
+        <ul id="activityList" class="activity-list"></ul>
+      </section>
+
+      <section class="card settings-section">
+        <h2>Settings</h2>
+        <button id="resetBtn" class="danger-btn">Reset Dashboard</button>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
