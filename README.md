@@ -1,4 +1,4 @@
-# Study Progress Dashboard
+# Study Progress State Driven Dashboard
 
 ## Description
 
@@ -26,15 +26,6 @@ The Study Progress Dashboard is a state-driven web application designed to help 
 * DOM Manipulation
 * Event Listeners
 * State-Driven Rendering
-
-## Project Structure
-
-```txt
-study-progress-dashboard/
-├── index.html
-├── style.css
-└── script.js
-```
 
 ## How to Run
 
@@ -71,15 +62,6 @@ Task information includes:
 * Completion Status
 
 Notes and activity entries are also stored within the state object and rendered dynamically.
-
-## Future Improvements
-
-* Save data using localStorage
-* Edit existing tasks
-* Edit existing notes
-* Sort tasks by priority
-* Search functionality
-* Multiple dashboard themes
 
 ## Live Site
 
