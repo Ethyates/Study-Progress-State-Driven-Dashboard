@@ -81,8 +81,6 @@ Notes and activity entries are also stored within the state object and rendered 
 * Search functionality
 * Multiple dashboard themes
 
-## Author
+## Live Site
 
-Ethan Yates
-
-Lake Land College
+[(GitHub Pages link)](https://ethyates.github.io/Study-Progress-State-Driven-Dashboard/)
